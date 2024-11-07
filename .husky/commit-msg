@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "✏️ Validating commit message..."
+node scripts/check-commit-msg.js "$1"
